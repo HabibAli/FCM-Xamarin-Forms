@@ -68,12 +68,14 @@ InternalGcmClient.cs //Utility class for GCM Client
 Following nuggets needs to be present in your application
 
 Xamarin.Android.Support.v7.AppCompat 23.3.0
+
 Xamarin.GooglePlayServices.Gcm 29.0.0.2
 
 After doing all those tasks above, your project is ready to process push notification fired by firebase console
 
-Regards
+Regards,
 
 Habib Ali
+
 Mohammad Samiullah Farooqi
 
