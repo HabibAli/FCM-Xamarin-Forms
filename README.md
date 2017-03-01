@@ -60,9 +60,13 @@ In that folder following classes are present
 
 Constants.cs //Constants for GCM. In that file you also need to provide SENDER_ID as derived from your firebase console application
 https://console.firebase.google.com/
+
 GcmBroadcastReceiverBase.cs //Receiver for push notification
+
 GcmService.cs //A service for registering and receiving notification
+
 GcmServiceBase.cs //Base class
+
 InternalGcmClient.cs //Utility class for GCM Client
 
 Following nuggets needs to be present in your application
