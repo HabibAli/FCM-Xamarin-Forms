@@ -1,12 +1,9 @@
 # FCM-Xamarin-Forms
-So many peoples have asked for convenient and efficient way of implementing FCM (Firebase Cloud Messaging) for android in Xamarin Form. Actually FCM lib cannot be installed in xamarin forms due to version conflict of android support lib present in xamarin forms. So here is the work around
+So many people have asked for convenient and efficient way of implementing FCM (Firebase Cloud Messaging) for android in Xamarin Form. Actually FCM library cannot be installed in xamarin forms due to version conflict of android support library present in xamarin forms. So here is the work around
 
 Firebase Cloud Messaging (FCM) is a cross-platform service that handles the sending, routing, and queueing of messages between server applications and mobile client apps. FCM is the successor to Google Cloud Messaging (GCM), and it is built on Google Play Services.
 
-Refer to following sample project in which the FCM is implemented in xamarin forms
-
-https://github.com/HabibAli/FCM-Xamarin-Forms
-
+I have used the following project for GCM.Client implementation https://github.com/Redth/GCM.Client
 If you want a similar implementation in your project then copy the GCM.Client folder in your project
 
 In MainActivity.cs class declare
@@ -15,38 +12,38 @@ using Gcm.Client; at the top
 
 and in class body
 
-static MainActivity instance = null;
+    static MainActivity instance = null;
 
-// Return the current activity instance.
-    public static MainActivity CurrentActivity
-    {
-      get
-      {
-        return instance;
-      }
-    }
+    // Return the current activity instance.
+        public static MainActivity CurrentActivity
+        {
+          get
+          {
+            return instance;
+          }
+        }
 In OnCreate method
 
-base.OnCreate(bundle);
+    base.OnCreate(bundle);
 
-try
-{
-  // Check to ensure everything's set up right
-  GcmClient.CheckDevice(this);
-  GcmClient.CheckManifest(this);
+    try
+    {
+      // Check to ensure everything's set up right
+      GcmClient.CheckDevice(this);
+      GcmClient.CheckManifest(this);
 
-  // Register for push notifications
-  System.Diagnostics.Debug.WriteLine("Registering...");
-  GcmClient.Register(this, PushHandlerBroadcastReceiver.SENDER_IDS);
-}
-catch (Java.Net.MalformedURLException)
-{
-  CreateAndShowDialog("There was an error creating the client. Verify the URL.", "Error");
-}
-catch (Exception e)
-{
-  CreateAndShowDialog(e.Message, "Error");
-}
+      // Register for push notifications
+      System.Diagnostics.Debug.WriteLine("Registering...");
+      GcmClient.Register(this, PushHandlerBroadcastReceiver.SENDER_IDS);
+    }
+    catch (Java.Net.MalformedURLException)
+    {
+      CreateAndShowDialog("There was an error creating the client. Verify the URL.", "Error");
+    }
+    catch (Exception e)
+    {
+      CreateAndShowDialog(e.Message, "Error");
+    }
 Declare the function
 
     private void CreateAndShowDialog(String message, String title)
@@ -57,6 +54,7 @@ Declare the function
       builder.SetTitle(title);
       builder.Create().Show();
     }
+
 Your app needs to import Gcm.Client folder into the project
 In that folder following classes are present
 
