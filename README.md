@@ -24,7 +24,7 @@ and in class body
         }
 In OnCreate method
 
-    base.OnCreate(bundle);
+    instance = this;
 
     try
     {
