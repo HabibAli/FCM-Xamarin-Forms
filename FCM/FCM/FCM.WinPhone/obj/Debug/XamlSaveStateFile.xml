@@ -1,9 +1,0 @@
-<XamlCompilerSaveState>
-  <ReferenceAssemblyList>
-    <ReferenceAssembly PathName="c:\users\hali\documents\visual studio 2015\projects\fcm\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.core.dll" HashGuid="2a418b72-55c1-19a8-a363-4b8c348fbee0" />
-    <ReferenceAssembly PathName="c:\users\hali\documents\visual studio 2015\projects\fcm\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.platform.dll" HashGuid="bb4040f4-26bb-5883-795e-627e39855666" />
-    <ReferenceAssembly PathName="c:\users\hali\documents\visual studio 2015\projects\fcm\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.platform.winrt.dll" HashGuid="068a3578-03d9-2580-f12e-c531e1d2d71c" />
-    <ReferenceAssembly PathName="c:\users\hali\documents\visual studio 2015\projects\fcm\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.platform.winrt.phone.dll" HashGuid="52b59dd3-49ca-beb7-ea1e-5100cbca4812" />
-    <ReferenceAssembly PathName="c:\users\hali\documents\visual studio 2015\projects\fcm\packages\xamarin.forms.2.2.0.45\lib\wpa81\xamarin.forms.xaml.dll" HashGuid="39a2c026-b4e0-6e41-04bc-58950ef1ecfd" />
-  </ReferenceAssemblyList>
-</XamlCompilerSaveState>
