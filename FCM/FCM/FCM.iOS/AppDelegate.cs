@@ -124,7 +124,8 @@ namespace FCM.iOS
 			{
 				if (error == null)
 				{
-					Messaging.SharedInstance.Subscribe("/topics/pushTest");
+					//TODO: Change Topic to what is required
+					Messaging.SharedInstance.Subscribe("/topics/all");
 				}
 				System.Diagnostics.Debug.WriteLine(error != null ? "error occured" : "connect success");
 			});
