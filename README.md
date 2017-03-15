@@ -1,4 +1,4 @@
-# FCM-Xamarin-Forms
+# Firebase-Cloud-Messaging-for-Xamarin-Forms-Android
 So many people have asked for convenient and efficient way of implementing FCM (Firebase Cloud Messaging) for android in Xamarin Form. Actually FCM library cannot be installed in xamarin forms due to version conflict of android support library present in xamarin forms. So here is the work around
 
 Firebase Cloud Messaging (FCM) is a cross-platform service that handles the sending, routing, and queueing of messages between server applications and mobile client apps. FCM is the successor to Google Cloud Messaging (GCM), and it is built on Google Play Services.
