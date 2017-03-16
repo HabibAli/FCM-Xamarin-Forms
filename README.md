@@ -180,13 +180,7 @@ Xamarin.Android.Support.v7.AppCompat 23.3.0
 
 Xamarin.GooglePlayServices.Gcm 29.0.0.2
 
-After doing all those tasks above, your project is ready to process push notification fired by firebase console
-
-Regards,
-
-Habib Ali
-
-Mohammad Samiullah Farooqi
+After doing all those tasks above, your android project is ready to process push notification fired by firebase console
 
 ### Xamarin Forms iOS Setup and Info
 ___
@@ -208,6 +202,7 @@ ___
 
 5. Add your *GoogleService-Info.plist* to your project and **remove** the old one, it's only for an example, **Right Click** go to **Build Action** > and check **BundleResource**
 
+
 ![GoogleService plist](https://cloud.githubusercontent.com/assets/5241888/23965864/cd61ce8a-098f-11e7-8118-f96ba98fabb8.png)
 
 When the App starts up it will attempt to register by first asking the user if the app can send Push messages to them, then depending if it's running on iOS >=9 or iOS 10 it will attempt to register to "/topics/all". If the app is open it will alert the user in app. If the app is closed it will display the message like a normal push.
@@ -219,3 +214,11 @@ In app message.
 <img width="479" alt="In App" src="https://cloud.githubusercontent.com/assets/5241888/23966756/f3d2af14-0992-11e7-8ab5-d1955f589661.PNG">
 
 
+
+Regards,
+
+Habib Ali
+
+Mohammad Samiullah Farooqi
+
+Stephen Barker
